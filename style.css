@@ -52,7 +52,7 @@
       margin-bottom: 30px;
   }
 
-  #button {
+  .button {
       position: relative;
       top: 24px;
 
@@ -63,6 +63,12 @@
       border-radius: 50%;
   }
 
-  #button>svg {
+  .button>svg {
       display: block;
+
+      pointer-events: none;
+  }
+
+  .button:hover {
+      box-shadow:hsl(150, 100%, 66%) 0px 0px 24px 0px;
   }
