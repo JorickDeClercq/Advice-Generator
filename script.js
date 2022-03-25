@@ -2,8 +2,6 @@ document.addEventListener('click', function(e) {
     // Check if the button was clicked
     if(!event.target.matches('.button')) return;
 
-    console.log('Button was clicked!')
-
     fetch("https://api.adviceslip.com/advice")
         .then((response) => response.json())
         .then((data) => renderAdvice(data))
